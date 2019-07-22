@@ -135,14 +135,14 @@ en:
       message: "Message"
       name: "Name"
     placeholder:
-      email: "you@example.com"
+      email: "info@cluedupconference.com"
       message: "Message"
       name: "Name"
       subject-line: "Enquiry"
   excerpt:
     more: "More"
   footer:
-    credit: "Built with the [Electric Book Works](https://electricbookworks.com) [Jekyll starter template](https://github.com/electricbookworks/jekyll-starter)."
+    credit: ""
   input:
     send: "Send"
     submit: "Submit"

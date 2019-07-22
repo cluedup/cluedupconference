@@ -11,7 +11,7 @@
 
 // Sizes
 $content-width: 40em;
-$side-nav-width: 10em;
+$side-nav-width: 15em;
 $dropdown-nav-width: 10em;
 $line-height: 1.4;
 $border-radius: 0.02em;
@@ -34,18 +34,31 @@ $caption-font-size: 0.8em;
 // @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
 
 // Colour palette
-$background-color-dark: #2d7375;
-$background-color-mid: #85c6c2;
-$background-color-light: #ffffff;
+$color-accent: #d1ea3f;
+$blue: #3f7cea;
+$purple: #ae3fea;
+$lime: #7cea3f;
+$orange: #eaae3f;
+$aqua: #3fd1ea;
+$magenta: #ea3fd1;
+$indigo: #583fea;
+$red: #ea583f;
+$darkgrey: #565656;
+
+$background-color-dark: $color-accent;
+$background-color-mid: #e1e1e1;
+$background-color-light: $blue;
 $text-color-dark: #222222;
 $text-color-mid: #e1e1e1;
 $text-color-light: #ffffff;
 $masthead-text-color: $background-color-dark;
-$masthead-background-color: $background-color-mid;
-$side-nav-color: $background-color-light;
-$dropdown-nav-color: $background-color-mid;
-$dropdown-nav-icon-color: $text-color-mid;
-$footer-background-color: $background-color-mid;
+$masthead-background-color: $background-color-light;
+$side-nav-color: transparent;
+$side-nav-text-color: white;
+$dropdown-nav-color: $darkgrey;
+$dropdown-nav-text-color: $side-nav-text-color;
+$dropdown-nav-icon-color: $color-accent;
+$footer-background-color: $color-accent;
 $link-color: #2d4f75;
 
 // Media query breakpoints
@@ -74,3 +87,69 @@ $break-point-xl: ($content-width * 2) + $side-nav-width + 10em;
 // Custom CSS
 // Add your own styles below to override
 // the template partials just imported.
+
+.masthead {
+    height: 10em;
+    .identity {
+        visibility: hidden;
+    }
+    .logo {
+        padding-left: 1em;
+        width: 12em;
+        img {
+            max-width: 100%;
+            max-height: none;
+        }
+    }
+    @media only screen and (min-width: $break-point-l) {
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 20em;
+            background-color: $darkgrey;
+            background: linear-gradient(10deg, rgba($darkgrey, 1) 80%, rgba(255,255,255,0.05) 100%);
+            z-index: -1;
+            height: 500vh;
+            transform: rotate(10deg) translatey(-20em) translatex(-18em);
+        }
+    }
+    .home & {
+        background-image: url('../images/heavybalance.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        @media only screen and (min-width: $break-point-l) {
+            height: 15em;
+        } 
+    }
+}
+
+section {
+    margin-left: -1000em;
+    padding-left: 1000em;
+    margin-right: -1000em;
+    padding-right: 1000em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    &:nth-of-type(1) {
+        background-color: $lime;
+    }
+    &:nth-of-type(2) {
+        background-color: $magenta;
+    }
+}
+
+.content {
+    .feature-image {
+        position: relative;
+        margin-top: -20em;
+        width: 200%;
+    }
+}
+
+nav {
+    ul {
+        max-width: $side-nav-width * 0.8;
+    }
+}

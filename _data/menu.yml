@@ -9,10 +9,11 @@
 
 - label: "Home"
   link: ""
-- label: "About us"
-  link: "about"
-  submenu:
-    - label: "Our team"
-      link: "about#our-team"
+- label: "Who will be there?"
+  link: "#who-will-be-there"
+- label: "What we’ll learn about"
+  link: "#what-well-learn-about"
+- label: "Not your typical conference"
+  link: "#not-your-typical-conference"
 - label: "Contact us"
   link: "contact"

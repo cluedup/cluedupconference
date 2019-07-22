@@ -17,9 +17,11 @@ https://builtvisible.com/responsive-images-for-busy-people-a-quick-primer/ {% en
 <img
     sizes="auto"
     src="{{ site.baseurl }}/images/{{ image }}.{{ file-extension }}"
-    srcset="{{ site.baseurl }}/images/{{ image }}-320.{{ file-extension }} 320w,
-    {{ site.baseurl }}/images/{{ image }}-640.{{ file-extension }} 640w,
-    {{ site.baseurl }}/images/{{ image }}-1024.{{ file-extension }} 1024w" class="lazyload{% if include.class %} {{ include.class }}{% endif %}"
+    {% unless file-extension == "svg" %}
+        srcset="{{ site.baseurl }}/images/{{ image }}-320.{{ file-extension }} 320w,
+        {{ site.baseurl }}/images/{{ image }}-640.{{ file-extension }} 640w,
+        {{ site.baseurl }}/images/{{ image }}-1024.{{ file-extension }} 1024w" class="lazyload{% if include.class %} {{ include.class }}{% endif %}"
+    {% endunless %}
     {% if include.alt %} alt="{{ include.alt }}"{% endif %} />
 
 {% endcapture %}{{ image-tag | strip_newlines }}

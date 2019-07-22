@@ -3,13 +3,15 @@
 # {{ site.data.settings.name }}
 
 # The main name of your site
-name: "Jekyll Starter"
+name: "CluedUp"
 
 # A tagline for your site, often shown with the name
-tagline: "Get up and running quickly"
+tagline: "The life-long learning conference"
 
 # A description of your site, e.g. for social-media snippets
-description: "This is a website for our team."
+description: >
+  CluedUp is South Africa’s first conference dedicated to lifelong learning and talent innovation. 
+  W17 Watershed, Cape Town. 14–15 May 2019.
 
 # The main language of your site. Use the IANA language subtag.
 # See https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry
@@ -20,13 +22,13 @@ language: "en"
 image: "avatar.png"
 
 # The logo for your site, if you have one
-logo: "logo.png"
+logo: "logo.svg"
 
 # The final, canonical address of your live site
-url: "http://example.com"
+url: "http://cluedupconference.com"
 
 # Your Google Analytics ID, if you're using Google Analytics
-google-analytics-id: "UA-00000000-0"
+google-analytics-id: "UA-144363777-1"
 
 # Your email address, e.g. for the contact form to use
-email: "info@example.com"
+email: "info@cluedupconference.com"

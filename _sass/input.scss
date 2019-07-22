@@ -34,12 +34,14 @@ textarea {
 // Buttons
 
 a.button, input[type="submit"] {
-	background-color: $background-color-mid;
-	padding: 0.5em 1em;
-	margin: 0 0.5em 0.5em 0;
-	border-radius: $border-radius;
-	display: inline-block;
-	color: $text-color-light;
+    background-color: $color-accent;
+    border-radius: $border-radius;
+    color: $text-color-light;
+    display: inline-block;
+    font-weight: 600;
+    margin: 0 0.5em 0.5em 0;
+    padding: 0.5em 1em;
+    cursor: pointer;
 	&.light {
 		background-color: $background-color-light;
 		box-shadow: none;
@@ -47,7 +49,7 @@ a.button, input[type="submit"] {
 		border: $rule-thickness solid $background-color-dark;
 	}
 	&:hover {
-		box-shadow: 0 0.05em 0.3em $background-color-dark;
+		box-shadow: 0 0.05em 0.3em $background-color-mid;
 	}
 }
 input[type="submit"] {
