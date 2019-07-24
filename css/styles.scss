@@ -170,6 +170,8 @@ blockquote {
             max-height: none;
         }
     }
+    // Create triangle shape. Note .wrapper {overflow: hidden }
+    // to prevent the 'triangle' making short pages very long.
     @media only screen and (min-width: $break-point-l) {
         &::before {
             background-color: $darkgrey;
@@ -198,6 +200,8 @@ blockquote {
         } 
     }
 }
+// For 'triangle shape'
+.wrapper { overflow: hidden; }
 
 // Navigation
 
