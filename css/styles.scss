@@ -11,7 +11,7 @@
 
 // Sizes
 $content-width: 40em;
-$side-nav-width: 15em;
+$side-nav-width: 10em;
 $dropdown-nav-width: 10em;
 $line-height: 1.4;
 $border-radius: 0.02em;
@@ -20,7 +20,7 @@ $rule-thickness: 1px;
 // Fonts
 $font-size: 1.2em;
 $font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-$font-secondary: "Apple Garamond", "Baskerville", "Times New Roman", "Droid Serif", "Times","Source Serif Pro", serif;
+$font-secondary: "Titillium Web", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 $font-monospace: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
 $side-nav-font-size: 1em;
 $dropdown-nav-font-size: 0.8em;
@@ -32,6 +32,9 @@ $caption-font-size: 0.8em;
 // Use @import here to use fonts hosted elsewhere. Example commented out below.
 // For easy @font-face snippets, try https://github.com/arthurattwell/font-faces
 // @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400,600&display=swap');
+
 
 // Colour palette
 $color-accent: #d1ea3f;
@@ -47,8 +50,8 @@ $darkgrey: #565656;
 
 $background-color-dark: $color-accent;
 $background-color-mid: #e1e1e1;
-$background-color-light: $blue;
-$text-color-dark: #222222;
+$background-color-light: white;
+$text-color-dark: $darkgrey;
 $text-color-mid: #e1e1e1;
 $text-color-light: #ffffff;
 $masthead-text-color: $background-color-dark;
@@ -88,6 +91,69 @@ $break-point-xl: ($content-width * 2) + $side-nav-width + 10em;
 // Add your own styles below to override
 // the template partials just imported.
 
+// Behaviour
+
+body {
+    scroll-behavior: smooth;
+}
+@media screen and (prefers-reduced-motion: reduce) {
+    body {
+        scroll-behavior: auto;
+    }
+}
+
+// Typography
+
+@mixin headings() {
+    font-family: $font-secondary;
+}
+h1, h2, h3, h4, h5, h6 {
+    @include headings();
+}
+h1 {
+    font-size: 2.5em;
+}
+h2 {
+    position: relative;
+    &:before {
+        border-top: ($rule-thickness * 3) solid $lime;
+        content: "";
+        display: block;
+        margin-bottom: 1em;
+        margin-left: -50%;
+        width: 100%;
+    }
+    &:after {
+        content: "\2022";
+        display: block;
+        font-size: 2em;
+        text-align: center;
+        position: absolute;
+        top: -0.38em;
+        left: 49%;
+        color: $lime;
+    }
+}
+
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 2em 0;
+    &:before {
+        content: "“";
+        float: left;
+        font-size: 2em;
+        margin-left: -0.5em;
+        margin-top: -0.2em;
+    }
+    & + .source {
+        color: lighten($darkgrey, 30%);
+        margin-top: -2em;
+        margin-bottom: 2em;
+        margin-left: $font-size;
+    }
+}
+
 .masthead {
     height: 10em;
     .identity {
@@ -103,26 +169,42 @@ $break-point-xl: ($content-width * 2) + $side-nav-width + 10em;
     }
     @media only screen and (min-width: $break-point-l) {
         &::before {
-            content: "";
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            width: 20em;
             background-color: $darkgrey;
             background: linear-gradient(10deg, rgba($darkgrey, 1) 80%, rgba(255,255,255,0.05) 100%);
-            z-index: -1;
+            bottom: 0;
+            box-shadow: 0px 0px 30px -10px $darkgrey;
+            content: "";
             height: 500vh;
+            position: absolute;
+            top: 0;
             transform: rotate(10deg) translatey(-20em) translatex(-18em);
+            width: 20em;
+            z-index: -1;
         }
     }
     .home & {
-        background-image: url('../images/heavybalance.jpg');
+        background-image: url('../images/panorama-2105955-pixabay-2048.jpg');
+        // background-image: url('../images/table-bay-harbour-3556859-2048.jpg');
+        background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         @media only screen and (min-width: $break-point-l) {
             height: 15em;
         } 
     }
+}
+
+@mixin icon($svg: "map-marker-alt-solid.svg", $color: $color-accent, $shift-up: 0) {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    margin-left: 0.2em;
+    width: 0.4em;
+    background-color: $color;
+    margin-bottom: $shift-up;
+    -webkit-mask-image: url('#{$svg}');
+    mask-image: url('#{$svg}');
+    mask-repeat: no-repeat;
 }
 
 section {
@@ -132,11 +214,43 @@ section {
     padding-right: 1000em;
     padding-top: 2em;
     padding-bottom: 2em;
-    &:nth-of-type(1) {
+    &.call-to-action {
         background-color: $lime;
+        box-shadow: 0px 0px 30px -10px $lime;
+        color: $darkgrey;
+        font-family: $font-secondary;
+        font-weight: 600;
+        p {
+            margin-bottom: 0;
+        }
+        .location {
+            font-size: 1.5em;
+            & a:after {
+                @include icon("../images/map-marker-alt-solid.svg", $darkgrey, -0.2em);
+            }
+        }
+        .date {
+            font-size: 1.5em;
+            & a:after {
+                @include icon("../images/calendar-plus-regular.svg", $darkgrey, -0.1em);
+            }
+        }
+        .offer {
+            margin-bottom: 1.5em;
+        }
+        .signup-note {
+            font-weight: normal;
+            margin-bottom: 0.5em;
+        }
+        input {
+            margin-bottom: 0;
+        }
+        & + section {
+            margin-top: 3em;
+        }
     }
     &:nth-of-type(2) {
-        background-color: $magenta;
+        // background-color: $magenta;
     }
 }
 
@@ -145,11 +259,5 @@ section {
         position: relative;
         margin-top: -20em;
         width: 200%;
-    }
-}
-
-nav {
-    ul {
-        max-width: $side-nav-width * 0.8;
     }
 }
