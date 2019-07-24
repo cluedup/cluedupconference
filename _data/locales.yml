@@ -142,7 +142,7 @@ en:
   excerpt:
     more: "More"
   footer:
-    credit: ""
+    credit: "Site by [Electric Book Works](https://electricbookworks.com). Firework image by [Jimmy Musto](https://unsplash.com/photos/iOWEyl7sEgY)."
   input:
     send: "Send"
     submit: "Submit"

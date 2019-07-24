@@ -40,13 +40,13 @@ PwC 22nd Annual Global CEO Survey, 2019
 
 Join 250 explorers of emerging ways of learning and training:
 
-- Discover innovative initiatives, fresh ways of thinking and new connections.
-- Get ahead by hearing from and learning with trailblazers in future-fit skills.
-- Reignite and share your enthusiasm for learning and development.
+- **Discover** innovative initiatives, fresh ways of thinking and new connections.
+- **Get ahead** by hearing from and learning with trailblazers in future-fit skills.
+- **Reignite and share** your enthusiasm for learning and development.
 
 Delegates will include senior executives and managers from:
 
-- Corporate Learning & Development departments
+- Corporate learning-and-development departments
 - Innovative edtech companies
 - High-impact skills development initiatives 
 - World-class universities and training institutions
@@ -65,22 +65,22 @@ Arie de Geus, Head of Shell’s Strategic Planning Group
 
 How do we:
 
-- Make workers and citizens future-fit?
-- Create job-ready young people out of a broken education system?
-- Develop talent pipelines that will increase our competitiveness?
-- Incentivise a learning culture in our organisations?
-- Retain employees with growth mindsets? 
-- Reskill aging workforces? 
-- Engage and educate customers?
-- Stay relevant ourselves?
+- Make workers and citizens **future-fit?**
+- Create **job-ready** young people out of a broken education system?
+- Develop **talent pipelines** that will increase our competitiveness?
+- Incentivise a **learning culture** in our organisations?
+- Retain employees with **growth mindsets?** 
+- **Reskill** aging workforces? 
+- **Engage** and educate customers?
+- Stay **relevant** ourselves?
 
-All CluedUp presenters are doers. They present “action studies”, so that delegates get practical insights about cutting-edge projects tackling:
+All CluedUp presenters are doers. They present 'action studies', so that delegates get practical insights about cutting-edge projects tackling:
 
-- Productive gamification 
-- Scaffolding for leadership development
-- Proxies for potential
-- Teaming humans with AI
-- Teaching coding to youth who have failed maths
+- Productive **gamification** 
+- Scaffolding for **leadership development**
+- Proxies for **potential**
+- **Teaming** humans with AI
+- **Teaching coding** to youth who have failed maths
 
 … and other exciting experiments
 
@@ -101,13 +101,15 @@ Virginia Woolf
 {:.source}
 
 Come curious! You’ll experience multiple pathways to getting clued-up.
+
 CluedUp offers:
-- A dedicated topical newsletter, preparing you for the conference with news and resources on lifelong learning
-- Unique session formats and immersive learning experiences
-- Only kick-ass keynotes
-- Real-time feedback: let’s hear from you! 
-- Curated match-making: a mutual opt-in database that connects people who simply have to meet
-- Micro-accreditation: get the CluedUp badge (both digitally and IRL) 
-- Not to mention, an awesome swag bag!
+
+- A dedicated **topical newsletter,** preparing you for the conference with news and resources on lifelong learning
+- Unique session formats and immersive **learning experiences**
+- Only **kick-ass** keynotes
+- **Real-time feedback:** let’s hear from you! 
+- **Curated match-making:** a mutual opt-in database that connects people who simply have to meet
+- **Micro-accreditation:** get the CluedUp badge (both digitally and IRL) 
+- Not to mention, an awesome **swag bag!**
 
 </section>

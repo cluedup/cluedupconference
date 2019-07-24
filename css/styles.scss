@@ -112,11 +112,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 2.5em;
+    .home & {
+        text-shadow: 3px 3px 8px lighten($darkgrey, 40%);
+    }
 }
 h2 {
     position: relative;
     &:before {
-        border-top: ($rule-thickness * 3) solid $lime;
+        border-top: ($rule-thickness * 3) solid $color-accent;
         content: "";
         display: block;
         margin-bottom: 1em;
@@ -131,7 +134,7 @@ h2 {
         position: absolute;
         top: -0.38em;
         left: 49%;
-        color: $lime;
+        color: $color-accent;
     }
 }
 
@@ -183,8 +186,10 @@ blockquote {
         }
     }
     .home & {
-        background-image: url('../images/panorama-2105955-pixabay-2048.jpg');
+        // background-image: url('../images/panorama-2105955-pixabay-2048.jpg');
         // background-image: url('../images/table-bay-harbour-3556859-2048.jpg');
+        background-image: url('../images/jimmy-musto-iOWEyl7sEgY-unsplash-2048.jpg');
+        // background-image: url('../images/jimmy-musto-T16-cG1gEdo-unsplash-2048.jpg');
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -193,6 +198,18 @@ blockquote {
         } 
     }
 }
+
+// Navigation
+
+// @media only screen and (min-width: $break-point-l) {
+//     nav {
+//         mix-blend-mode: difference;
+//         ul {
+//             position: fixed;
+//             max-width: 11em;
+//         }
+//     }
+// }
 
 @mixin icon($svg: "map-marker-alt-solid.svg", $color: $color-accent, $shift-up: 0) {
     content: "";
@@ -215,7 +232,7 @@ section {
     padding-top: 2em;
     padding-bottom: 2em;
     &.call-to-action {
-        background-color: $lime;
+        background-color: $color-accent;
         box-shadow: 0px 0px 30px -10px $lime;
         color: $darkgrey;
         font-family: $font-secondary;
@@ -248,9 +265,6 @@ section {
         & + section {
             margin-top: 3em;
         }
-    }
-    &:nth-of-type(2) {
-        // background-color: $magenta;
     }
 }
 
