@@ -23,7 +23,9 @@ Early-bird ticket bookings open September 2019.
 Sign up to be emailed when registration opens
 {:.signup-note}
 
-<input type="text" name="email" placeholder="Email address">
+<form data-netlify="true" name="email-signup" method="POST">
+    <input type="email" name="email" placeholder="Email address">
+</form>
 
 </section>
 
