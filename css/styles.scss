@@ -244,6 +244,17 @@ section {
         p {
             margin-bottom: 0;
         }
+        form {
+            display: flex;
+            .email-form-submit {
+                background-color: white;
+                color: $lime;
+                &:hover {
+                    background-color: $darkgrey;
+                    color: white;
+                }
+            }
+        }
         .location {
             font-size: 1.5em;
             & a:after {

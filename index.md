@@ -26,6 +26,7 @@ Sign up to be emailed when registration opens
 <form data-netlify="true" name="email-signup" method="POST" action="{{ site.baseurl }}/thank-you/" netlify-honeypot="bot-field" >
     <input type="email" name="email" placeholder="Email address">
     <span class="hidden"><input name="bot-field"></span>
+    <input type="submit" class="email-form-submit" value="Sign up">
 </form>
 
 </section>
