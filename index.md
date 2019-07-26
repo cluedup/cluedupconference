@@ -1,6 +1,5 @@
 ---
 title: Home
-description: "CluedUp is South Africa’s first conference dedicated to lifelong learning and talent innovation. W17 Watershed, Cape Town. 14–15 May 2019."
 style: home
 ---
 
