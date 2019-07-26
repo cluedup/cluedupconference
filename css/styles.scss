@@ -182,6 +182,7 @@ blockquote {
             height: 500vh;
             position: absolute;
             top: 0;
+            left: -9em; // otherwise intrudes in tall screens
             transform: rotate(10deg) translatey(-20em) translatex(-18em);
             width: 20em;
             z-index: -1;
