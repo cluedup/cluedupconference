@@ -175,16 +175,16 @@ blockquote {
     @media only screen and (min-width: $break-point-l) {
         &::before {
             background-color: $darkgrey;
-            background: linear-gradient(10deg, rgba($darkgrey, 1) 80%, rgba(255,255,255,0.05) 100%);
+            background: linear-gradient(10deg, rgba($darkgrey, 1) 90%, rgba(255,255,255,0.05) 100%);
             bottom: 0;
             box-shadow: 0px 0px 30px -10px $darkgrey;
             content: "";
             height: 500vh;
             position: absolute;
             top: 0;
-            left: -9em; // otherwise intrudes in tall screens
-            transform: rotate(10deg) translatey(-20em) translatex(-18em);
-            width: 20em;
+            transform: skew(-10deg);
+            transform-origin: top left;
+            width: 17em;
             z-index: -1;
         }
     }
