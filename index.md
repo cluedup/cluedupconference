@@ -11,15 +11,14 @@ CluedUp is South Africa’s first conference dedicated to **lifelong learning** 
 
 <section class="call-to-action" markdown="1" id="call-to-action">
 
-[W17 Watershed, Cape Town](https://goo.gl/maps/bDDgMbAmKzbpcTZQ7){:target="_blank"}
-{:.location}
-
 <!-- For setting this link, see https://stackoverflow.com/a/19867654/1781075 -->
-
 [14–15 May 2019](https://calendar.google.com/calendar/r/eventedit?text=CluedUp+Conference&dates=20200514/20200516&details=For+details,+link+here:+https://cluedupconference.com&location=Workshop17+Watershed,+Cape+Town){:target="_blank"}
 {:.date}
 
-Early bird ticket bookings open September 2019. 
+[W17 Watershed, Cape Town](https://goo.gl/maps/bDDgMbAmKzbpcTZQ7){:target="_blank"}
+{:.location}
+
+Early-bird ticket bookings open September 2019. 
 {:.offer}
 
 Sign up to be emailed when registration opens
