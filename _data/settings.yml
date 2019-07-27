@@ -32,3 +32,7 @@ google-analytics-id: "UA-144363777-1"
 
 # Your email address, e.g. for the contact form to use
 email: "info@cluedupconference.com"
+
+# Your form providers, e.g. "netlify"
+form-provider:
+  contact-form: "netlify"

@@ -1,10 +1,17 @@
 {% comment %}
-Contact form createed with Formspree.
+Contact form created with Formspree.
 See https://formspree.io for how to activate it.
+If you're hosting on Netlify, you can use Netlify forms instead.
+Activate this in settings.yml > web > form-provider > contact-form.
 {% endcomment %}
 
 <div class="contact-form">
-    <form action="https://formspree.io/{{ site.data.settings.email }}" method="POST">
+
+    {% if site.data.settings.form-provider.contact-form == "netlify" %}
+        <form data-netlify="true" netlify-honeypot="_gotcha" action="{{ site.baseurl }}/thank-you/" method="POST" name="contact">
+    {% else %}
+        <form action="https://formspree.io/{{ site.data.settings.email }}" method="POST">
+    {% endif %}
 
         <label for="form-name">{{ site.data.locales[site.data.settings.language].contact.label.name | markdownify | replace: "<p>", "" | replace: "</p>", "" }}</label>
         <input type="text" name="name" id="form-name" placeholder="{{ site.data.locales[site.data.settings.language].contact.placeholder.name }}">
