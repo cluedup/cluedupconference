@@ -10,6 +10,7 @@ CluedUp is South Africa’s first conference dedicated to **lifelong learning** 
 
 <section class="call-to-action" markdown="1" id="call-to-action">
 
+{% comment %}
 <!-- For setting this link, see https://stackoverflow.com/a/19867654/1781075 -->
 [14–15 May 2020](https://calendar.google.com/calendar/r/eventedit?text=CluedUp+Conference&dates=20200514/20200516&details=For+details,+link+here:+https://cluedupconference.com&location=Workshop17+Watershed,+Cape+Town){:target="_blank"}
 {:.date}
@@ -28,6 +29,7 @@ Sign up to be emailed when registration opens
     <span class="hidden"><input name="bot-field"></span>
     <input type="submit" class="email-form-submit" value="Sign up">
 </form>
+ {% endcomment %}
 
 </section>
 
@@ -88,9 +90,11 @@ All CluedUp presenters are doers. They present 'action studies', so that delegat
 
 </section>
 
+{% comment %}
 <section class="call-to-action" markdown="1">
 [Sign up to be emailed when the programme is published.](#call-to-action)
 </section>
+{% endcomment %}
 
 
 <section class="info" markdown="1">
