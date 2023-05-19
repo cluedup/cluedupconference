@@ -15,5 +15,5 @@
   link: "#what-well-learn-about"
 - label: "Not your typical conference"
   link: "#not-your-typical-conference"
-- label: "Contact us"
-  link: "contact"
+# - label: "Contact us"
+#   link: "contact"
